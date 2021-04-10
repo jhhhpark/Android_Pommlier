@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "648980854796",
+    "project_id": "project-pommlier",
+    "storage_bucket": "project-pommlier.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648980854796:android:fb8c3cc6d2894d82245629",
+        "android_client_info": {
+          "package_name": "com.JamesPark_H.pommelier_project_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648980854796-3hbdmiim6subs8dplgo47916fuv9vo84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGthAZg4yO1Tz3HkORZZiRI09--hiteoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "648980854796-3hbdmiim6subs8dplgo47916fuv9vo84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

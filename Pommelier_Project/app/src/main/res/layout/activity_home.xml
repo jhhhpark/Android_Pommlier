@@ -17,7 +17,7 @@
 
         <EditText
             android:id="@+id/edtTextSearch"
-            android:layout_width="300dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="24dp"
@@ -26,27 +26,45 @@
             android:hint="당신의 점심을 선택하세요."
             android:inputType="textPersonName" />
 
-        <Button
-            android:id="@+id/btnHomeWrite"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="글쓰기"
-            android:textColor="@color/black"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:backgroundTint="#B6B6B6"
-            android:layout_marginTop="24dp"
-            android:layout_marginRight="10dp"/>
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnHomeWrite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="글쓰기"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:backgroundTint="#B6B6B6"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="로그아웃"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:backgroundTint="#B6B6B6"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
 
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/itemListLayout"
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
         android:gravity="clip_vertical"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,9 +85,13 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/homePostRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itemListLayout"
         tools:listitem="@layout/item_post" />
 

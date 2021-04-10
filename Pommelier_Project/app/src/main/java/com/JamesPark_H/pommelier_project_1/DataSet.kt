@@ -1,7 +1,5 @@
 package com.JamesPark_H.pommelier_project_1
 
-import android.widget.TextView
-
 data class RankData(
     var txRankUserName : String? = null,
     var txRankTitle: String? = null,
